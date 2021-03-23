@@ -1,4 +1,4 @@
-console.log("Trabalhando com Condicionais")
+console.log("Trabalhando com Operadores Lógicos")
 
 const cidades = new Array("Curitiba", "Salvador", "São Paulo", "Rio de Janeiro");
 console.log(cidades)
