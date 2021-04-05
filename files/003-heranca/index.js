@@ -1,30 +1,19 @@
 import { Cliente } from "./Cliente.js"
-import { ContaCorrente } from "./ContaCorrente.js"
+import { Diretor } from "./Funcionario/Diretor.js"
+import { Gerente } from "./Funcionario/Gerente.js"
+import { SistemaAutenticacao } from "./SistemaAutenticacao.js"
 
-const cliente1 = new Cliente("José das Covas", 12345678945)
-const cliente2 = new Cliente("Maria Fernanda", 98765432100)
+const diretor = new Diretor("Rodrigo", 10000, 12345678945)
+diretor.cadastrarSenha("a1b2c3")
+const diretorLogado = SistemaAutenticacao.login(diretor, "a1b2c3")
 
-const contaCorrente1 = new ContaCorrente(1234, cliente1)
-console.log(contaCorrente1)
-console.log()
+const gerente = new Gerente("Ricardo",  5000, 98765432100)
+gerente.cadastrarSenha("abc1234")
+const gerenteLogado = SistemaAutenticacao.login(gerente, "abc123")
 
-const contaCorrente2 = new ContaCorrente(4321, cliente2)
-console.log(contaCorrente2)
-console.log()
+const cliente = new Cliente("Lais", 11111111111, "123")
+const clienteLogado = SistemaAutenticacao.login(cliente, "123")
 
-let valorDeposito = 9999.99
-const valorDepositado = contaCorrente1.depositar(valorDeposito)
-console.log("Valor depositado: R$", valorDepositado)
-console.log(contaCorrente1)
-
-let valorSaque = 3210.98
-const valorSacado = contaCorrente1.sacar(valorSaque)
-console.log("Valor sacado: R$", valorSacado)
-console.log(contaCorrente1)
-
-console.log()
-
-contaCorrente1.transferir(5000, contaCorrente2)
-console.log(contaCorrente1)
-console.log(contaCorrente2)
-console.log("Número de contas:", ContaCorrente.numeroDeContas)
+console.log("O Diretor está logado?", diretorLogado)
+console.log("O Gerente está logado?", gerenteLogado)
+console.log("O Cliente está logado?", clienteLogado)
