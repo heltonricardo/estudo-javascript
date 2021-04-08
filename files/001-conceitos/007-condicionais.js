@@ -1,10 +1,10 @@
 console.log("Trabalhando com Condicionais")
 
-const cidades = new Array("Curitiba", "Salvador", "São Paulo", "Rio de Janeiro");
+const cidades = new Array("Curitiba", "Salvador", "São Paulo", "Rio de Janeiro")
 console.log(cidades)
 
-const idadeComprador = 15;
-const compradorAcompanhado = true;
+const idadeComprador = 15
+const compradorAcompanhado = true
 
 if (idadeComprador >= 18) {
     console.log("Comprador maior de idade")
