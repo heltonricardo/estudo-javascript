@@ -1,6 +1,6 @@
 console.log("Trabalhando com Loops")
 
-const cidades = new Array("Curitiba", "Salvador", "São Paulo", "Rio de Janeiro");
+const cidades = new Array("Curitiba", "Salvador", "São Paulo", "Rio de Janeiro")
 console.log(cidades)
 
 const destino = "Salvador"
