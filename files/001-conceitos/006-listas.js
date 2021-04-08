@@ -4,7 +4,7 @@ console.log("Trabalhando com Listas")
 // const cidade2 = "São Paulo"
 // const cidade3 = "Rio de Janeiro"
 
-const cidades = new Array("Salvador", "São Paulo", "Rio de Janeiro");
+const cidades = new Array("Salvador", "São Paulo", "Rio de Janeiro")
 console.log(cidades)
 
 // Adiciona itens à lista
