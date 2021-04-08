@@ -5,7 +5,7 @@ export class SistemaAutenticacao {
     static login(autenticavel, senha) {
         if (SistemaAutenticacao.isAutenticavel(autenticavel))
             return autenticavel.autenticar(senha)
-        return false;
+        return false
     }
 
     static isAutenticavel(autenticavel) {
